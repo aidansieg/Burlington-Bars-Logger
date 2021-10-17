@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		717B2677271C954900F14FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B2676271C954900F14FCA /* AppDelegate.swift */; };
+		717B2679271C954900F14FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B2678271C954900F14FCA /* SceneDelegate.swift */; };
+		717B267B271C954900F14FCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B267A271C954900F14FCA /* ViewController.swift */; };
+		717B267E271C954900F14FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717B267C271C954900F14FCA /* Main.storyboard */; };
+		717B2680271C954E00F14FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717B267F271C954E00F14FCA /* Assets.xcassets */; };
+		717B2683271C954E00F14FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717B2681271C954E00F14FCA /* LaunchScreen.storyboard */; };
+		717B268E271C954E00F14FCA /* Burlington_Bar_LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B268D271C954E00F14FCA /* Burlington_Bar_LoggerTests.swift */; };
+		717B2698271C954E00F14FCA /* Burlington_Bar_LoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B2697271C954E00F14FCA /* Burlington_Bar_LoggerUITests.swift */; };
+		717B269A271C954E00F14FCA /* Burlington_Bar_LoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B2699271C954E00F14FCA /* Burlington_Bar_LoggerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		717B268A271C954E00F14FCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717B266B271C954900F14FCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717B2672271C954900F14FCA;
+			remoteInfo = "Burlington-Bar-Logger";
+		};
+		717B2694271C954E00F14FCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717B266B271C954900F14FCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717B2672271C954900F14FCA;
+			remoteInfo = "Burlington-Bar-Logger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		717B2673271C954900F14FCA /* Burlington-Bar-Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burlington-Bar-Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		717B2676271C954900F14FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		717B2678271C954900F14FCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		717B267A271C954900F14FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		717B267D271C954900F14FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		717B267F271C954E00F14FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		717B2682271C954E00F14FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		717B2684271C954E00F14FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717B2689271C954E00F14FCA /* Burlington-Bar-LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burlington-Bar-LoggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		717B268D271C954E00F14FCA /* Burlington_Bar_LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burlington_Bar_LoggerTests.swift; sourceTree = "<group>"; };
+		717B2693271C954E00F14FCA /* Burlington-Bar-LoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burlington-Bar-LoggerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		717B2697271C954E00F14FCA /* Burlington_Bar_LoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burlington_Bar_LoggerUITests.swift; sourceTree = "<group>"; };
+		717B2699271C954E00F14FCA /* Burlington_Bar_LoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burlington_Bar_LoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		717B2670271C954900F14FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717B2686271C954E00F14FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717B2690271C954E00F14FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		717B266A271C954900F14FCA = {
+			isa = PBXGroup;
+			children = (
+				717B2675271C954900F14FCA /* Burlington-Bar-Logger */,
+				717B268C271C954E00F14FCA /* Burlington-Bar-LoggerTests */,
+				717B2696271C954E00F14FCA /* Burlington-Bar-LoggerUITests */,
+				717B2674271C954900F14FCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		717B2674271C954900F14FCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				717B2673271C954900F14FCA /* Burlington-Bar-Logger.app */,
+				717B2689271C954E00F14FCA /* Burlington-Bar-LoggerTests.xctest */,
+				717B2693271C954E00F14FCA /* Burlington-Bar-LoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		717B2675271C954900F14FCA /* Burlington-Bar-Logger */ = {
+			isa = PBXGroup;
+			children = (
+				717B2676271C954900F14FCA /* AppDelegate.swift */,
+				717B2678271C954900F14FCA /* SceneDelegate.swift */,
+				717B267A271C954900F14FCA /* ViewController.swift */,
+				717B267C271C954900F14FCA /* Main.storyboard */,
+				717B267F271C954E00F14FCA /* Assets.xcassets */,
+				717B2681271C954E00F14FCA /* LaunchScreen.storyboard */,
+				717B2684271C954E00F14FCA /* Info.plist */,
+			);
+			path = "Burlington-Bar-Logger";
+			sourceTree = "<group>";
+		};
+		717B268C271C954E00F14FCA /* Burlington-Bar-LoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				717B268D271C954E00F14FCA /* Burlington_Bar_LoggerTests.swift */,
+			);
+			path = "Burlington-Bar-LoggerTests";
+			sourceTree = "<group>";
+		};
+		717B2696271C954E00F14FCA /* Burlington-Bar-LoggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				717B2697271C954E00F14FCA /* Burlington_Bar_LoggerUITests.swift */,
+				717B2699271C954E00F14FCA /* Burlington_Bar_LoggerUITestsLaunchTests.swift */,
+			);
+			path = "Burlington-Bar-LoggerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		717B2672271C954900F14FCA /* Burlington-Bar-Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717B269D271C954E00F14FCA /* Build configuration list for PBXNativeTarget "Burlington-Bar-Logger" */;
+			buildPhases = (
+				717B266F271C954900F14FCA /* Sources */,
+				717B2670271C954900F14FCA /* Frameworks */,
+				717B2671271C954900F14FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Burlington-Bar-Logger";
+			productName = "Burlington-Bar-Logger";
+			productReference = 717B2673271C954900F14FCA /* Burlington-Bar-Logger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		717B2688271C954E00F14FCA /* Burlington-Bar-LoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717B26A0271C954E00F14FCA /* Build configuration list for PBXNativeTarget "Burlington-Bar-LoggerTests" */;
+			buildPhases = (
+				717B2685271C954E00F14FCA /* Sources */,
+				717B2686271C954E00F14FCA /* Frameworks */,
+				717B2687271C954E00F14FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717B268B271C954E00F14FCA /* PBXTargetDependency */,
+			);
+			name = "Burlington-Bar-LoggerTests";
+			productName = "Burlington-Bar-LoggerTests";
+			productReference = 717B2689271C954E00F14FCA /* Burlington-Bar-LoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		717B2692271C954E00F14FCA /* Burlington-Bar-LoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717B26A3271C954E00F14FCA /* Build configuration list for PBXNativeTarget "Burlington-Bar-LoggerUITests" */;
+			buildPhases = (
+				717B268F271C954E00F14FCA /* Sources */,
+				717B2690271C954E00F14FCA /* Frameworks */,
+				717B2691271C954E00F14FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717B2695271C954E00F14FCA /* PBXTargetDependency */,
+			);
+			name = "Burlington-Bar-LoggerUITests";
+			productName = "Burlington-Bar-LoggerUITests";
+			productReference = 717B2693271C954E00F14FCA /* Burlington-Bar-LoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		717B266B271C954900F14FCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					717B2672271C954900F14FCA = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					717B2688271C954E00F14FCA = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 717B2672271C954900F14FCA;
+					};
+					717B2692271C954E00F14FCA = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 717B2672271C954900F14FCA;
+					};
+				};
+			};
+			buildConfigurationList = 717B266E271C954900F14FCA /* Build configuration list for PBXProject "Burlington-Bar-Logger" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 717B266A271C954900F14FCA;
+			productRefGroup = 717B2674271C954900F14FCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				717B2672271C954900F14FCA /* Burlington-Bar-Logger */,
+				717B2688271C954E00F14FCA /* Burlington-Bar-LoggerTests */,
+				717B2692271C954E00F14FCA /* Burlington-Bar-LoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		717B2671271C954900F14FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717B2683271C954E00F14FCA /* LaunchScreen.storyboard in Resources */,
+				717B2680271C954E00F14FCA /* Assets.xcassets in Resources */,
+				717B267E271C954900F14FCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717B2687271C954E00F14FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717B2691271C954E00F14FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		717B266F271C954900F14FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717B267B271C954900F14FCA /* ViewController.swift in Sources */,
+				717B2677271C954900F14FCA /* AppDelegate.swift in Sources */,
+				717B2679271C954900F14FCA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717B2685271C954E00F14FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717B268E271C954E00F14FCA /* Burlington_Bar_LoggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717B268F271C954E00F14FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717B269A271C954E00F14FCA /* Burlington_Bar_LoggerUITestsLaunchTests.swift in Sources */,
+				717B2698271C954E00F14FCA /* Burlington_Bar_LoggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		717B268B271C954E00F14FCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717B2672271C954900F14FCA /* Burlington-Bar-Logger */;
+			targetProxy = 717B268A271C954E00F14FCA /* PBXContainerItemProxy */;
+		};
+		717B2695271C954E00F14FCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717B2672271C954900F14FCA /* Burlington-Bar-Logger */;
+			targetProxy = 717B2694271C954E00F14FCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		717B267C271C954900F14FCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717B267D271C954900F14FCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		717B2681271C954E00F14FCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717B2682271C954E00F14FCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		717B269B271C954E00F14FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		717B269C271C954E00F14FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		717B269E271C954E00F14FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7X9RKK64W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Burlington-Bar-Logger/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asiegel2.Burlington-Bar-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717B269F271C954E00F14FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7X9RKK64W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Burlington-Bar-Logger/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asiegel2.Burlington-Bar-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		717B26A1271C954E00F14FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7X9RKK64W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asiegel2.Burlington-Bar-LoggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Burlington-Bar-Logger.app/Burlington-Bar-Logger";
+			};
+			name = Debug;
+		};
+		717B26A2271C954E00F14FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7X9RKK64W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asiegel2.Burlington-Bar-LoggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Burlington-Bar-Logger.app/Burlington-Bar-Logger";
+			};
+			name = Release;
+		};
+		717B26A4271C954E00F14FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7X9RKK64W;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asiegel2.Burlington-Bar-LoggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Burlington-Bar-Logger";
+			};
+			name = Debug;
+		};
+		717B26A5271C954E00F14FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7X9RKK64W;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asiegel2.Burlington-Bar-LoggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Burlington-Bar-Logger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		717B266E271C954900F14FCA /* Build configuration list for PBXProject "Burlington-Bar-Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717B269B271C954E00F14FCA /* Debug */,
+				717B269C271C954E00F14FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717B269D271C954E00F14FCA /* Build configuration list for PBXNativeTarget "Burlington-Bar-Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717B269E271C954E00F14FCA /* Debug */,
+				717B269F271C954E00F14FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717B26A0271C954E00F14FCA /* Build configuration list for PBXNativeTarget "Burlington-Bar-LoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717B26A1271C954E00F14FCA /* Debug */,
+				717B26A2271C954E00F14FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717B26A3271C954E00F14FCA /* Build configuration list for PBXNativeTarget "Burlington-Bar-LoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717B26A4271C954E00F14FCA /* Debug */,
+				717B26A5271C954E00F14FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 717B266B271C954900F14FCA /* Project object */;
+}
