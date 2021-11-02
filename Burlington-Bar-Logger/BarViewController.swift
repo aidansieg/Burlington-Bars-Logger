@@ -68,4 +68,17 @@ class BarViewController: UITableViewController {
         tableView.estimatedRowHeight = 65
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showBar":
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let bar = barStore.allBars[row]
+                let detailViewController = segue.destination as! DetailViewController
+                detailViewController.bar = bar
+            }
+        default:
+            preconditionFailure("Unexpected segue indentifier.")
+        }
+    
+    }
 }
