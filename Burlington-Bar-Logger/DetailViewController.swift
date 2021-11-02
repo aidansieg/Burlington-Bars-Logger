@@ -24,4 +24,18 @@ class DetailViewController: UIViewController {
         descriptionField.text = bar.description
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        bar.name = nameField.text ?? ""
+        bar.address = addressField.text ?? ""
+        
+//        if let ratingText = ratingField.text, let rating = NumberFormatter.number(from: ratingText) {
+//            bar.rating = rating.intValue
+//        } else {
+//            bar.rating = 0
+//        }
+        
+        bar.description = descriptionField.text ?? ""
+    }
 }
