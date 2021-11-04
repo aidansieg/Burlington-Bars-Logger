@@ -10,6 +10,7 @@ import UIKit
 
 class BarViewController: UITableViewController {
     var barStore: BarStore!
+    var imageStore: ImageStore!
     
     @IBAction func addNewBar(_ sender: UIBarButtonItem) {
         let newBar = barStore.createBar()
@@ -43,6 +44,8 @@ class BarViewController: UITableViewController {
             
             barStore.removeBar(bar)
             
+            imageStore.deleteItem(forKey: bar.barKey)
+            
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
@@ -65,6 +68,7 @@ class BarViewController: UITableViewController {
                 let bar = barStore.allBars[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.bar = bar
+                detailViewController.imageStore = imageStore
             }
         default:
             preconditionFailure("Unexpected segue indentifier.")

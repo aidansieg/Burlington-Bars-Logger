@@ -12,6 +12,7 @@ class Bar: Equatable, Codable{
     var address: String
     var description: String
     var rating: Int
+    let barKey: String
     // add photo property
     
     init (name: String, address: String, description: String, rating: Int) {
@@ -19,6 +20,7 @@ class Bar: Equatable, Codable{
         self.address = address
         self.description = description
         self.rating = rating
+        self.barKey = UUID().uuidString
     }
     
 //    convenience init(random: Bool = false) {
