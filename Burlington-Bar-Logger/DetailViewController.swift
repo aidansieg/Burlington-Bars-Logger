@@ -14,6 +14,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     @IBOutlet var descriptionField: UITextField!
     @IBOutlet var imageView: UIImageView!
     
+    @IBAction func deleteBarEntry(_ sender: UIBarButtonItem) {
+        
+    }
+    
     @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
