@@ -14,8 +14,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     @IBOutlet var descriptionField: UITextField!
     @IBOutlet var imageView: UIImageView!
     
-    @IBAction func deleteBarEntry(_ sender: UIBarButtonItem) {
+    var barStore: BarStore!
+    var imageStore: ImageStore!
+    
+    @IBAction func deleteBar(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: "Delete Bar Entry", message: "This will delete this bar entry from your logger", preferredStyle: .alert)
+        alertController.modalPresentationStyle = .automatic
+//        barStore.removeBar(bar)
+//        imageStore.deleteItem(forKey: bar.barKey)
+//        
+//        tableView.reloadData()
         
+        let cancel = UIAlertAction(title: "Cancel", style: .default)
+        alertController.addAction(cancel)
+        
+        let delete = UIAlertAction(title: "Delete", style: .destructive)
+        alertController.addAction(delete)
+        
+        present(alertController, animated: true, completion: nil)
+        
+        print("test")
     }
     
     @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
@@ -52,7 +70,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
     
-    var imageStore: ImageStore!
+//    var imageStore: ImageStore!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
