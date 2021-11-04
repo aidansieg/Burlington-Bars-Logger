@@ -7,13 +7,17 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var addressField: UITextField!
     @IBOutlet var ratingField: UILabel!
     @IBOutlet var descriptionField: UITextField!
     
-    var bar: Bar!
+    var bar: Bar! {
+        didSet {
+            navigationItem.title = bar.name
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,5 +41,10 @@ class DetailViewController: UIViewController {
 //        }
         
         bar.description = descriptionField.text ?? ""
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

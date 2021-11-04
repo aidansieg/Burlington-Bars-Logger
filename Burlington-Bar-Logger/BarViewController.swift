@@ -11,7 +11,7 @@ import UIKit
 class BarViewController: UITableViewController {
     var barStore: BarStore!
     
-    @IBAction func addNewBar(_ sender: UIButton) {
+    @IBAction func addNewBar(_ sender: UIBarButtonItem) {
         let newBar = barStore.createBar()
         
         if let index = barStore.allBars.firstIndex(of: newBar) {
@@ -19,16 +19,6 @@ class BarViewController: UITableViewController {
             let indexPath = IndexPath(row: index, section: 0)
             
             tableView.insertRows(at: [indexPath], with: .automatic)
-        }
-    }
-    
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
-        if isEditing {
-            sender.setTitle("Edit", for: .normal)
-            setEditing(false, animated: true)
-        } else {
-            sender.setTitle("Done", for: .normal)
-            setEditing(true, animated: true)
         }
     }
     
@@ -79,12 +69,17 @@ class BarViewController: UITableViewController {
         default:
             preconditionFailure("Unexpected segue indentifier.")
         }
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         tableView.reloadData()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem
     }
 }

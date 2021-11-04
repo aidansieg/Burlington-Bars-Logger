@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Bar: Equatable{
+class Bar: Equatable, Codable{
     var name: String
     var address: String
     var description: String
