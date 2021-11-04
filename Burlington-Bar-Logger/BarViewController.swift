@@ -23,13 +23,6 @@ class BarViewController: UITableViewController {
         }
     }
     
-//    @IBAction func deleteBar(_ sender: UIBarButtonItem) {
-//            
-//        let indexPath = IndexPath(row: 0, section: 0)
-//            
-//        tableView.deleteRows(at: [indexPath], with: .automatic)
-//    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return barStore.allBars.count
     }

@@ -20,10 +20,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     @IBAction func deleteBar(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "Delete Bar Entry", message: "This will delete this bar entry from your logger", preferredStyle: .alert)
         alertController.modalPresentationStyle = .automatic
-//        barStore.removeBar(bar)
-//        imageStore.deleteItem(forKey: bar.barKey)
-//        
-//        tableView.reloadData()
+        barStore.removeBar(bar)
+        imageStore.deleteItem(forKey: bar.barKey)
+        
+        
+        viewWillAppear(true)
         
         let cancel = UIAlertAction(title: "Cancel", style: .default)
         alertController.addAction(cancel)
@@ -72,6 +73,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     
 //    var imageStore: ImageStore!
     
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -88,6 +93,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        view.endEditing(true)
         
         bar.name = nameField.text ?? ""
         bar.address = addressField.text ?? ""
