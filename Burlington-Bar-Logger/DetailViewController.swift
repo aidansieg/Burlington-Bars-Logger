@@ -20,21 +20,20 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     @IBAction func deleteBar(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "Delete Bar Entry", message: "This will delete this bar entry from your logger", preferredStyle: .alert)
         alertController.modalPresentationStyle = .automatic
-        barStore.removeBar(bar)
-        imageStore.deleteItem(forKey: bar.barKey)
-        
-        
-        viewWillAppear(true)
         
         let cancel = UIAlertAction(title: "Cancel", style: .default)
         alertController.addAction(cancel)
         
-        let delete = UIAlertAction(title: "Delete", style: .destructive)
+        let delete = UIAlertAction(title: "Delete", style: .destructive) { _ in
+            self.barStore.removeBar(self.bar)
+            self.imageStore.deleteItem(forKey: self.bar.barKey)
+            //self.BarViewController.tableview.deleteRows(at: bar, with: .automatic)
+        }
         alertController.addAction(delete)
         
         present(alertController, animated: true, completion: nil)
         
-        print("test")
+        self.navigationController!.popViewController(animated: true)
     }
     
     @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
@@ -70,9 +69,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
             navigationItem.title = bar.name
         }
     }
-    
-//    var imageStore: ImageStore!
-    
+        
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
@@ -99,11 +96,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         bar.name = nameField.text ?? ""
         bar.address = addressField.text ?? ""
         
-//        if let ratingText = ratingField.text, let rating = NumberFormatter.number(from: ratingText) {
-//            bar.rating = rating.intValue
-//        } else {
-//            bar.rating = 0
-//        }
+        if let ratingText = ratingField.text, let rating = numberFormatter.number(from: ratingText) {
+            bar.rating = rating.intValue
+        } else {
+            bar.rating = 0
+        }
         
         bar.description = descriptionField.text ?? ""
     }

@@ -33,21 +33,30 @@ class BarViewController: UITableViewController {
         let bar = barStore.allBars[indexPath.row]
         
         cell.nameLabel.text = bar.name
-        cell.ratingLabel.text = "\(bar.rating)"
+        cell.ratingLabel.text = "\(bar.rating) out of 5"
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            let bar = barStore.allBars[indexPath.row]
-            
-            barStore.removeBar(bar)
-            
-            imageStore.deleteItem(forKey: bar.barKey)
-            
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+        
+        let bar = barStore.allBars[indexPath.row]
+        
+        let alertController = UIAlertController(title: "Delete Bar Entry", message: "This will delete this bar entry from your logger", preferredStyle: .alert)
+        alertController.modalPresentationStyle = .automatic
+        
+        let delete = UIAlertAction(title: "Delete", style: .destructive) { _ in
+            self.barStore.removeBar(bar)
+            tableView.deleteRows(at: [indexPath], with: .none)
         }
+        
+        alertController.addAction(delete)
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .default)
+        alertController.addAction(cancel)
+     
+        present(alertController, animated: true, completion: nil)
+        
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {

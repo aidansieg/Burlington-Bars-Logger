@@ -23,25 +23,6 @@ class Bar: Equatable, Codable{
         self.barKey = UUID().uuidString
     }
     
-//    convenience init(random: Bool = false) {
-//        if random {
-//            let adjectives = ["fluffy", "rusty", "shiny"]
-//            let nouns = ["dog", "cat", "mouse"]
-//
-//            let randomAdj = adjectives.randomElement()!
-//            let randomNoun = nouns.randomElement()!
-//
-//            let randomName = "\(randomAdj) \(randomNoun)"
-//            let randomRate = Int.random(in: 0..<100)
-//            let randomAddress = UUID().uuidString.components(separatedBy: "-").first!
-//
-//            self.init(name: randomName, address: randomAddress, description: randomAddress, rating: randomRate)
-//
-//        } else {
-//            self.init(name: "", address: "", description: "", rating: 0)
-//        }
-//    }
-    
     convenience init(random: Bool = false) {
         self.init(name: "", address: "", description: "", rating: 0)
     }
