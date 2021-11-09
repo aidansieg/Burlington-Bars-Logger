@@ -5,7 +5,6 @@
 //  Created by Aidan Siegel on 10/17/21.
 //
 
-//import Foundation
 import UIKit
 
 class BarViewController: UITableViewController {
