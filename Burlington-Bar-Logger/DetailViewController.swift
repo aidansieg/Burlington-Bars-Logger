@@ -16,24 +16,29 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     
     var barStore: BarStore!
     var imageStore: ImageStore!
+    var row: Int!
     
     @IBAction func deleteBar(_ sender: UIBarButtonItem) {
-        let alertController = UIAlertController(title: "Delete Bar Entry", message: "This will delete this bar entry from your logger", preferredStyle: .alert)
-        alertController.modalPresentationStyle = .automatic
+        let alertController = UIAlertController(title: "Are you sure you want to delete \(bar.name)?", message: nil, preferredStyle: .alert)
+        alertController.modalPresentationStyle = .popover
+        alertController.popoverPresentationController?.barButtonItem = sender
+        
+        let delete = UIAlertAction(title: "Delete", style: .destructive) { _ in
+            self.navigationController!.popViewController(animated: true)
+            let bar = self.barStore.allBars[self.row]
+            self.barStore.removeBar(bar)
+            self.imageStore.deleteItem(forKey: bar.barKey)
+        
+        }
+        
+        alertController.addAction(delete)
         
         let cancel = UIAlertAction(title: "Cancel", style: .default)
         alertController.addAction(cancel)
         
-        let delete = UIAlertAction(title: "Delete", style: .destructive) { _ in
-            self.barStore.removeBar(self.bar)
-            self.imageStore.deleteItem(forKey: self.bar.barKey)
-            //self.BarViewController.tableview.deleteRows(at: bar, with: .automatic)
-        }
-        alertController.addAction(delete)
-        
         present(alertController, animated: true, completion: nil)
         
-        self.navigationController!.popViewController(animated: true)
+        
     }
     
     @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
@@ -70,6 +75,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
         
+    let numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        return formatter
+    }()
+    
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }

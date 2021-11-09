@@ -42,7 +42,7 @@ class BarViewController: UITableViewController {
         
         let bar = barStore.allBars[indexPath.row]
         
-        let alertController = UIAlertController(title: "Delete Bar Entry", message: "This will delete this bar entry from your logger", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Are you sure you want to delete \(bar.name)?", message: nil, preferredStyle: .alert)
         alertController.modalPresentationStyle = .automatic
         
         let delete = UIAlertAction(title: "Delete", style: .destructive) { _ in
@@ -77,7 +77,9 @@ class BarViewController: UITableViewController {
                 let bar = barStore.allBars[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.bar = bar
+                detailViewController.barStore = barStore
                 detailViewController.imageStore = imageStore
+                detailViewController.row = row
             }
         default:
             preconditionFailure("Unexpected segue indentifier.")

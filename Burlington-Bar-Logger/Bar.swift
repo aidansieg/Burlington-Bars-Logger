@@ -13,7 +13,6 @@ class Bar: Equatable, Codable{
     var description: String
     var rating: Int
     let barKey: String
-    // add photo property
     
     init (name: String, address: String, description: String, rating: Int) {
         self.name = name
